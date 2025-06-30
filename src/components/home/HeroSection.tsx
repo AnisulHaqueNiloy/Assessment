@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
 
         {/* Main Headline */}
         <h1 className="text-4xl md:text-7xl lg:text-8xl font-extrabold text-black leading-tight mt-10 md:mt-10">
-          I've been{" "}
+          I&apos;ve been{" "}
           <span className="bg-black text-white px-2 py-1 rounded-lg inline-block">
             Developing
           </span>
