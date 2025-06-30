@@ -1,5 +1,7 @@
 <!-- # 💼 Developer Portfolio – Built with Next.js, Typescript & Tailwind CSS
 
+liveurl : https://assessment-snowy.vercel.app/
+
 This is a modern, responsive, and accessible developer portfolio website built using Next.js, Tailwind CSS, React and Typescript.It includes all essential sections like Hero, Skills, About, Work Process, Contact, and Footer — tailored to showcase your professional presence on the web.
 
 ---
@@ -44,7 +46,7 @@ Clone the repository and run the development server:
 
 ``bash
 
-git clone https://github.com/Sohag00879/raintor-task.git
+git clone https://github.com/AnisulHaqueNiloy/Assessment
 
 cd your-portfolio
 
