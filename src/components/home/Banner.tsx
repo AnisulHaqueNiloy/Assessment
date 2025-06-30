@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Banner() {
   const sectionRef = useRef(null);
-  const headingRef = useRef(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
   const desc1Ref = useRef(null);
   const desc2Ref = useRef(null);
   const buttonRef = useRef(null);

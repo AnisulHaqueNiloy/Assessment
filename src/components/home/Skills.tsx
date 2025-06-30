@@ -7,7 +7,7 @@ import gsap from "gsap";
 import img from "../../assets/cardIcon.png";
 import left from "../../assets/Vector 1.png";
 import right from "../../assets/Vector 2.png";
-import i from '../../assets/div.png'; // Assuming this is for the "Why Choose me" icon
+import i from "../../assets/div.png"; // Assuming this is for the "Why Choose me" icon
 
 export default function Skills() {
   const skills = [
@@ -178,7 +178,8 @@ export default function Skills() {
     const handleResize = () => {
       // Set cardsPerView based on screen width
       // You can adjust these breakpoints as needed
-      if (window.innerWidth < 768) { // md breakpoint in Tailwind is 768px
+      if (window.innerWidth < 768) {
+        // md breakpoint in Tailwind is 768px
         setCardsPerView(1);
       } else {
         setCardsPerView(3);
@@ -197,7 +198,9 @@ export default function Skills() {
   return (
     <section className="bg-black text-white dark:bg-black dark:text-white py-16 lg:py-24">
       <div className="container mx-auto px-4">
-        <div className="mb-8 flex items-center gap-2"> {/* Added gap-2 for spacing */}
+        <div className="mb-8 flex items-center gap-2">
+          {" "}
+          {/* Added gap-2 for spacing */}
           {/* Ensure 'i' is defined and correctly imported */}
           {i && <Image src={i} alt="Decoration Icon" width={32} height={32} />}
           <Button
@@ -277,7 +280,9 @@ export default function Skills() {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                ref={(el) => (cardRefs.current[index] = el)}
+                ref={(el) => {
+                  cardRefs.current[index] = el;
+                }}
                 onMouseEnter={() => onMouseEnter(index)}
                 onMouseLeave={() => onMouseLeave(index)}
                 className="skill-card bg-gray-900 rounded-3xl p-8 flex-shrink-0
@@ -285,7 +290,9 @@ export default function Skills() {
                            transition-transform duration-300"
               >
                 <div
-                  ref={(el) => (iconRefs.current[index] = el)}
+                  ref={(el) => {
+                    iconRefs.current[index] = el;
+                  }}
                   className="mb-6 w-16 h-16 flex items-center justify-center"
                 >
                   <Image src={img} alt="Skill Icon" width={64} height={64} />
