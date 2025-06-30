@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { useState, useRef, useLayoutEffect } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import gsap from "gsap";
@@ -12,7 +12,7 @@ export default function WorkProcess() {
   const sectionRef = useRef(null);
   const titleGroupRef = useRef(null); // Ref for the "Work Process" pill and arrow
   const mainTitleRef = useRef(null); // Ref for "My Work Process" heading
-  const gridContainerRef = useRef(null); // Ref for the grid to animate its children
+  const gridContainerRef = useRef<HTMLDivElement>(null); // Ref for the grid to animate its children
 
   useLayoutEffect(() => {
     if (sectionRef.current) {
